@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'currency',
+    loadChildren: () => import('./currency/currency.module').then( m => m.CurrencyPageModule)
+  },
 ];
 
 @NgModule({

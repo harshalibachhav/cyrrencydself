@@ -1,0 +1,77 @@
+<ion-content>
+  <ion-card class="cardOne">
+    <ion-input
+      type="number"
+      class="value-input inputOne"
+      [(ngModel)]="convertCurrencyFromValue"
+      (keyup)="calculateExchangeRates()"
+    >
+    </ion-input>
+
+    <ion-select
+      class="popover-content"
+      interface="popover"
+      [(ngModel)]="convertCurrencyFrom"
+      ngDefaultControl
+      (ionChange)="calculateExchangeRates()"
+      title="{{currencyAbbreviations[convertCurrencyFrom]}} - {{convertCurrencyFrom}}"
+    >
+      <ion-select-option
+        *ngFor="let exchangeRate of exchangeRates | keyvalue"
+        [value]="exchangeRate.key"
+        title="{{currencyAbbreviations[exchangeRate.key]}} - {{exchangeRate.key}}"
+      >
+        {{currencyAbbreviations[exchangeRate.key]}} - {{exchangeRate.key}}
+      </ion-select-option>
+    </ion-select>
+  </ion-card>
+  <ion-card class="cardTwo">
+    <ion-input
+      type="number"
+      class="currency-convert-to-input"
+      [(ngModel)]="convertCurrencyToValue"
+      (keyup)="calculateReverseExchangeRates()"
+    >
+    </ion-input>
+    <!-- 
+  <ionc-accrodian>
+    <ion-list interface="popover"
+      [(ngModel)]="convertCurrencyTo"
+      ngDefaultControl
+      (ionChange)="calculateExchangeRates()"
+      title="{{currencyAbbreviations[convertCurrencyTo]}} - {{convertCurrencyTo}}"
+    >
+      <ion-item  *ngFor="let exchangeRate of exchangeRates | keyvalue"
+        [value]="exchangeRate.key"
+        title="{{currencyAbbreviations[exchangeRate.key]}} - {{exchangeRate.key}}"
+      >
+      </ion-item>
+    </ion-list>
+  </ion-accrodion>
+ -->
+    <ion-select
+      interface="popover"
+      [(ngModel)]="convertCurrencyTo"
+      ngDefaultControl
+      (ionChange)="calculateExchangeRates()"
+      title="{{currencyAbbreviations[convertCurrencyTo]}} - {{convertCurrencyTo}}"
+    >
+      <ion-select-option
+        *ngFor="let exchangeRate of exchangeRates | keyvalue"
+        [value]="exchangeRate.key"
+        title="{{currencyAbbreviations[exchangeRate.key]}} - {{exchangeRate.key}}"
+      >
+        {{currencyAbbreviations[exchangeRate.key]}} - {{exchangeRate.key}}
+      </ion-select-option>
+    </ion-select>
+  </ion-card>
+
+  <ion-button
+    size="large"
+    color="light"
+    class="swap"
+    (click)="swap(convertCurrencyFrom, convertCurrencyTo)"
+  >
+    <ion-icon name="repeat-outline"></ion-icon>
+  </ion-button>
+</ion-content>

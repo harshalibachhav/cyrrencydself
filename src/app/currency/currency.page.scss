@@ -1,0 +1,173 @@
+// // ion-content {
+// //   position: relative;
+
+// //   ion-card {
+// //     border-radius: 0;
+// //     height: 200px;
+// //   }
+
+// //   .cardOne {
+// //     margin-bottom: 0;
+// //     background-color: rgb(31, 233, 216);
+// //     color: #000;
+// //     position: relative;
+
+// //     // ion-select-option {
+// //     //   position: absolute;
+// //     // }
+// //   }
+
+// //   .cardTwo {
+// //     margin-top: 0;
+// //     position: relative;
+// //   }
+
+// //   ion-input {
+// //     margin: 64px 10px;
+// //     border-bottom: 1px solid white;
+// //     border-width: 0 0 2px 0;
+// //     width: 80%;
+// //     font-size: 1.2rem;
+// //   }
+// //   .inputTwo {
+// //     border-bottom: 1px solid rgb(97, 93, 93);
+// //   }
+
+// //   .swap {
+// //     position: absolute;
+// //     top: 176px;
+// //     right: 40px;
+// //   }
+
+// //   ion-button {
+// //     border: 0.5px solid rgb(255, 255, 255);
+// //     border-radius: 20px;
+// //   }
+
+// //   ion-select {
+// //     position: absolute;
+// //     top: 34%;
+// //     // border: 1px solid black;
+// //     width: 180px;
+// //     right: 10px;
+// //   }
+
+// //   // :root {
+// //   .popover-content {
+// //     // left: 0 !important;
+// //     // width: 100%;
+// //     // height: 280px;
+// //   }
+// //   // }
+// // }
+
+// ion-content {
+//   // position: relative;
+
+//   ion-card {
+//     border-radius: 0;
+//     height: 200px;
+//   }
+
+//   .cardOne {
+//     margin-bottom: 0;
+//     background-color: rgb(31, 233, 216);
+//     color: #000;
+//     position: relative;
+
+//     // ion-select-option {
+//     //   position: absolute;
+//     // }
+//   }
+
+//   .cardTwo {
+//     margin-top: 0;
+//     position: relative;
+//   }
+
+//   ion-input {
+//     margin: 64px 10px;
+//     border-bottom: 1px solid white;
+//     border-width: 0 0 2px 0;
+//     width: 80%;
+//     font-size: 1.2rem;
+//   }
+//   .inputTwo {
+//     border-bottom: 1px solid rgb(97, 93, 93);
+//   }
+
+//   .swap {
+//     position: absolute;
+//     top: 176px;
+//     right: 40px;
+//   }
+
+//   ion-button {
+//     border: 0.5px solid rgb(255, 255, 255);
+//     border-radius: 20px;
+//   }
+
+//   ion-select {
+//     position: absolute;
+//     top: 34%;
+//     // border: 1px solid black;
+//     width: 180px;
+//     right: 10px;
+//     left: 10px;
+//   }
+
+//   // :root {
+//   .popover-content {
+//     // left: 0 !important;
+//     // width: 100%;
+//     // height: 280px;
+//   }
+//   // }
+// }
+ion-card {
+  border-radius: 0;
+  height: 200px;
+}
+
+.cardOne {
+  margin-bottom: 0;
+  background-color: rgb(31, 233, 216);
+  color: #000;
+}
+
+.cardTwo {
+  margin-top: 0;
+}
+
+ion-input {
+  margin: 64px 10px;
+  border-bottom: 1px solid white;
+  border-width: 0 0 2px 0;
+  width: 40%;
+  font-size: 1.2rem;
+}
+.inputTwo {
+  border-bottom: 1px solid rgb(97, 93, 93);
+}
+
+ion-content {
+  position: relative;
+}
+.swap {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+}
+
+ion-button {
+  border: 0.5px solid rgb(254, 254, 255);
+  border-radius: 10px;
+}
+
+ion-select {
+  position: absolute;
+  top: 34%;
+  // border: 1px solid black;
+  width: 170px;
+  right: 10px;
+}
